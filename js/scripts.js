@@ -7,20 +7,32 @@
   { name: "Butterfree", type: ["bug"], weight: 32 }
 ];
  return {
-    add: function(pokemon) {
+    function add(pokemon) {
       pokemonList.push(pokemon);
-    },
-    getAll: function() {
-      return pokemonList;
     }
+    function getAll() {
+    return pokemonList;
+  }
+  return {
+    add: add,
+    getAll: getAll
   };
   })();
+
   function myPokemonWrite(pokemon) {
   document.write(pokemon.name + ' (weight: ' + pokemon.weight + ')');
   if (pokemon.weight >= 10) {
     document.write(' - Wow! That is heavy!');
-}
-pokemonRepository.add
-console.log(pokemonRepository.getAll());
+}}
+
 pokemonRepository.add ({name: 'Sharpedo', type: ['fish'], weight: 88.8 });;
 console.log(pokemonRepository.getAll());
+
+pokemonRepository.getAll().forEach(function (pokemon) {
+  pokemonRepository.addpokemonList(pokemon);
+}
+
+
+
+
+  
