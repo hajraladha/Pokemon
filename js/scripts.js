@@ -6,7 +6,6 @@
   { name: "Jigglypuff", type: ["fairy"], weight: 5.5 },
   { name: "Butterfree", type: ["bug"], weight: 32 }
 ];
- return {
     function add(pokemon) {
       pokemonList.push(pokemon);
     }
@@ -18,19 +17,21 @@
     getAll: getAll
   };
   })();
+  pokemonRepository.add ({name: "Sharpedo", type: ["fish"], weight: 88.8 });
 
   function myPokemonWrite(pokemon) {
-  document.write(pokemon.name + ' (weight: ' + pokemon.weight + ')');
-  if (pokemon.weight >= 10) {
-    document.write(' - Wow! That is heavy!');
-}}
+  document.write(pokemon.name + "(weight: " + pokemon.weight + ")");
 
-pokemonRepository.add ({name: 'Sharpedo', type: ['fish'], weight: 88.8 });;
-console.log(pokemonRepository.getAll());
+  if (pokemon.weight >= 10) {
+    document.write(" - Wow! That is heavy!");
+}
+document.write("<br/>");
+}
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-  pokemonRepository.addpokemonList(pokemon);
-}
+  myPokemonWrite(pokemon);
+});
+
 
 
 
