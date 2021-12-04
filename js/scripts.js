@@ -12,12 +12,28 @@
     function getAll() {
     return pokemonList;
   }
+  function addListItem(pokemon){
+  let pokemonList = document.querySelector(".pokemon-list");
+  let listpokemon = document.createElement("li");
+  let button = document.createElement("button"); 
+  button.innerText = pokemon.name;
+  button.classList.add("button");
+  listpokemon.appendChild(button);
+  pokemonList.appendChild(listpokemon);
+  }
+  function showDetails(pokemon){
+    console.log(pokemon.name)
+  }
+  button.addEventListener('click', function (pokemon){
+  showDetails(pokemon);
+});
   return {
     add: add,
-    getAll: getAll
+    getAll: getAll,
+    addListItem: addListItem
   };
   })();
-  pokemonRepository.add ({name: "Sharpedo", type: ["fish"], weight: 88.8 });
+  pokemonRepository.add({name: "Sharpedo", type: ["fish"], weight: 88.8 });
 
   function myPokemonWrite(pokemon) {
   document.write(pokemon.name + "(weight: " + pokemon.weight + ")");
@@ -29,7 +45,7 @@ document.write("<br/>");
 }
 
 pokemonRepository.getAll().forEach(function (pokemon) {
-  myPokemonWrite(pokemon);
+pokemonRepository.addListItem(pokemon); 
 });
 
 
