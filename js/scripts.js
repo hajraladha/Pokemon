@@ -20,13 +20,13 @@
   button.classList.add("button");
   listpokemon.appendChild(button);
   pokemonList.appendChild(listpokemon);
+  button.addEventListener('click', function (){
+  showDetails(pokemon);
+});
   }
   function showDetails(pokemon){
     console.log(pokemon.name)
   }
-  button.addEventListener('click', function (pokemon){
-  showDetails(pokemon);
-});
   return {
     add: add,
     getAll: getAll,
