@@ -43,6 +43,10 @@ button:hover {
   padding: 10px;
 } 
 
+#modal-container.is-visible {
+  display: block;
+}  
+
 #modal-container {
   position: fixed;
   padding: 20px;
