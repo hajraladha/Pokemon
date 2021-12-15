@@ -64,7 +64,7 @@ button:hover {
   overflow: auto; 
   
   /* this is used to center the modal */
-  display: grid;
+  display: none;
   text-align: center;
 }
 
