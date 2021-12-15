@@ -62,12 +62,12 @@ function loadList() {
 
     function showDetails(pokemon) {
     loadDetails(pokemon).then(function () {
-      console.log(pokemon);
+       return showModal(pokemon)
     });
   }
 
 let modalContainer = document.querySelector('#modal-container');
-  function showModal(title, text) {
+  function showModal(pokemon) {
     modalContainer.innerHTML = '';
     let modal = document.createElement('div');
     modal.classList.add('modal');
@@ -96,50 +96,50 @@ let modalContainer = document.querySelector('#modal-container');
     modalContainer.classList.remove('is-visible');
   }
 
-   if (dialogPromiseReject) {
-      dialogPromiseReject();
-      dialogPromiseReject = null;
-    }
-  }
+//    if (dialogPromiseReject) {
+//       dialogPromiseReject();
+//       dialogPromiseReject = null;
+//     }
+//   }
 
-  function showDialog(title, text) {
-  showModal(title, text);
+//   function showDialog(title, text) {
+//   showModal(title, text);
 
-  // We want to add a confirm and cancel button to the modal
-  let modal = modalContainer.querySelector('.modal');
+//   // We want to add a confirm and cancel button to the modal
+//   let modal = modalContainer.querySelector('.modal');
 
-  let confirmButton = document.createElement('button');
-  confirmButton.classList.add('modal-confirm');
-  confirmButton.innerText = 'Confirm';
+//   let confirmButton = document.createElement('button');
+//   confirmButton.classList.add('modal-confirm');
+//   confirmButton.innerText = 'Confirm';
 
-  let cancelButton = document.createElement('button');
-  cancelButton.classList.add('modal-cancel');
-  cancelButton.innerText = 'Cancel';
+//   let cancelButton = document.createElement('button');
+//   cancelButton.classList.add('modal-cancel');
+//   cancelButton.innerText = 'Cancel';
 
-  modal.appendChild(confirmButton);
-  modal.appendChild(cancelButton);
+//   modal.appendChild(confirmButton);
+//   modal.appendChild(cancelButton);
 
-  // We want to focus the confirmButton so that the user can simply press Enter
-  confirmButton.focus();
-  return new Promise((resolve, reject) => {
-  cancelButton.addEventListener('click', hideModal);
-  confirmButton.addEventListener('click', () => {
-    dialogPromiseReject = null; // Reset this
-    hideModal();
-    resolve();
-  });
-  // This can be used to reject from other functions
-  dialogPromiseReject = reject;
-});
-}
+//   // We want to focus the confirmButton so that the user can simply press Enter
+//   confirmButton.focus();
+//   return new Promise((resolve, reject) => {
+//   cancelButton.addEventListener('click', hideModal);
+//   confirmButton.addEventListener('click', () => {
+//     dialogPromiseReject = null; // Reset this
+//     hideModal();
+//     resolve();
+//   });
+//   // This can be used to reject from other functions
+//   dialogPromiseReject = reject;
+// });
+// }
 
-document.querySelector('#show-dialog').addEventListener('click', () => {
-  showDialog('Confirm action', 'Are you sure you want to do this?').then(function() {
-    alert('confirmed!');
-  }, () => {
-    alert('not confirmed');
-  });
-});
+// document.querySelector('#show-dialog').addEventListener('click', () => {
+//   showDialog('Confirm action', 'Are you sure you want to do this?').then(function() {
+//     alert('confirmed!');
+//   }, () => {
+//     alert('not confirmed');
+//   });
+// });
 
   window.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
@@ -169,6 +169,8 @@ document.querySelector('#show-dialog').addEventListener('click', () => {
     showDetails: showDetails
   };
 })();
+
+//IIFE wraps
   
 pokemonRepository.loadList().then(function() {
 pokemonRepository.getAll().forEach(function (pokemon) {
