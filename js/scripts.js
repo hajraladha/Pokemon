@@ -78,16 +78,29 @@ let modalContainer = document.querySelector('#modal-container');
     closeButtonElement.addEventListener('click', hideModal);
 
     let titleElement = document.createElement('h1');
-    titleElement.innerText = title;
+    titleElement.innerText = pokemon.name;
 
     let contentElement = document.createElement('p');
-    contentElement.innerText = text;
+    contentElement.innerText = "height: " + pokemon.height;
 
+    let container = document.querySelector('#image-container');
+
+// Create an <img> element
+    let myImage = document.createElement('img');
+
+// setting `src` property to set the actual element's `src` attribute
+// this also works on <img> elements selected by querySelector() method, it is not specific for <img> elements created with createElement() methods
+    myImage.src = 'https://i.kym-cdn.com/photos/images/original/001/152/404/fec.png';
+   
+  
+    
     modal.appendChild(closeButtonElement);
     modal.appendChild(titleElement);
     modal.appendChild(contentElement);
+    modal.appendChild(myImage);
     modalContainer.appendChild(modal);
 
+ 
 
     modalContainer.classList.add('is-visible');
   }
