@@ -91,7 +91,7 @@ let modalContainer = document.querySelector('#modal-container');
 
 // setting `src` property to set the actual element's `src` attribute
 // this also works on <img> elements selected by querySelector() method, it is not specific for <img> elements created with createElement() methods
-    myImage.src = 'https://i.kym-cdn.com/photos/images/original/001/152/404/fec.png';
+    myImage.src = pokemon.imageUrl; 
    
   
     
