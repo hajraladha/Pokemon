@@ -36,11 +36,10 @@ button:hover {
   color: #000000;
   background-color:white;
 }
-
 .pokemon-list {
   list-style: none;
   text-align: center;
-  padding: 10px;
+  padding: 60px;
 } 
 
 #modal-container.is-visible {
@@ -68,7 +67,7 @@ button:hover {
   text-align: center;
 }
 
-.modal {
+.modal-content {
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
@@ -95,10 +94,16 @@ button:hover {
   text-decoration: underline;
 }
 
-.modal h1 {
+.modal.content h1 {
   margin-top: 0;
 }
 
-.modal p {
+.modal.content p {
   margin-bottom: 0;
 }
+.page-container {
+margin-top: 60px;
+}
+.btn-secondary {
+  background-color: inherit;
+  color:inherit;
