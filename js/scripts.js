@@ -103,7 +103,7 @@ let pokemonRepository = (function () {
 
     let nameElement = $('<h1 class="text-capitalize">' + pokemon.name + '</h1>');
     let imageElement = $('<img class="modal-img" style="width:30%">');
-    imageElement.attr("src", pokemon.imageUrl);
+    imageElement.attr('src', pokemon.imageUrl);
 
     let heightElement = $('<p>' + 'Height : ' + pokemon.height + '</p>');
     let weightElement = $('<p>' + 'Weight : ' + pokemon.weight + '</p>');
@@ -122,9 +122,9 @@ let pokemonRepository = (function () {
 
 // adds search element to the page
 $(document).ready(function(){
-  $("#search-pokemon").on("input", function() {
+  $('#search-pokemon').on('input', function() {
     var value = $(this).val().toLowerCase();
-    $(".btn").filter(function() {
+    $('.btn').filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
