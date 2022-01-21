@@ -39,12 +39,8 @@ button:hover {
 .pokemon-list {
   list-style: none;
   text-align: center;
-  padding: 11px;
-  overflow: auto;
-  display: flex;
-  border: 6px double yellow;
-  margin: 1px
-} 
+  padding: 60px;
+  
 
 #modal-container.is-visible {
   display: block;
@@ -112,16 +108,15 @@ margin-top: 60px;
   background-color: inherit;
   color:inherit;
 }
-.btn btn-outline-secondary {
-  background-color: #fdee30;
-  color:#fdee30;
-}
-   .search-bar{
+   /* .search-bar{
      width:200px;
      border:2px solid #fdee30
     }
     .search-bar:hover{
       border:2px solid #fdee30
 
-    }
-    
+    } 
+     .btn-outline-secondary {
+      background-color: #fdee30;
+      color:#fdee30;
+    } */
