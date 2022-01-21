@@ -16,7 +16,7 @@ body {
 }
 .button {
   border: none;
-  float: left;
+  display: block;
   font-family: 'Libre Baskerville', sans-serif;
   list-style-type: none;
   cursor: pointer;
@@ -39,11 +39,15 @@ button:hover {
 .pokemon-list {
   list-style: none;
   text-align: center;
-  padding: 60px;
+  padding: 11px;
+  overflow: auto;
+  display: flex;
+  border: 6px double yellow;
+  margin: 1px
 } 
 
 #modal-container.is-visible {
-  float: left;
+  display: block;
 }  
 
 #modal-container {
@@ -107,3 +111,17 @@ margin-top: 60px;
 .btn-secondary {
   background-color: inherit;
   color:inherit;
+}
+.btn btn-outline-secondary {
+  background-color: #fdee30;
+  color:#fdee30;
+}
+   .search-bar{
+     width:200px;
+     border:2px solid #fdee30
+    }
+    .search-bar:hover{
+      border:2px solid #fdee30
+
+    }
+    
