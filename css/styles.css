@@ -39,7 +39,15 @@ button:hover {
 .pokemon-list {
   list-style: none;
   text-align: center;
-  padding: 60px;
+  padding: 11px;
+  overflow: auto;
+  display: block;
+  border: 6px double yellow;
+
+  .pokemon-list li {
+    margin: 1rem;
+    }
+    
   
 
 #modal-container.is-visible {
