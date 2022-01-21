@@ -121,20 +121,13 @@ let pokemonRepository = (function () {
   }
 
 // adds search element to the page
-let searchForm = $('.pokemon-search')
-searchForm.on('input', function (event) {
-  event.preventDefault();
-  let searchString = $('#myInput').val().toLowerCase();
-  $('.pokemon-app').empty('');
-  if (searchString === '') {
-    pokemonRepository.getAll().forEach(function (pokemon) {
-    pokemonRepository.addList(pokemon);
-// $(document).ready(function(){
-//   $('#search-pokemon').on('input', function() {
-//     var value = $(this).val().toLowerCase();
-//     $('.btn').filter(function() {
-//       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-//     });
+
+$(document).ready(function(){
+  $('#search-pokemon').on('input', function() {
+    var value = $(this).val().toLowerCase();
+    $('.btn').filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
   });
 });
 
