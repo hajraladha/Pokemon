@@ -16,7 +16,7 @@ body {
 }
 .button {
   border: none;
-  display: block;
+  float: left;
   font-family: 'Libre Baskerville', sans-serif;
   list-style-type: none;
   cursor: pointer;
@@ -43,7 +43,7 @@ button:hover {
 } 
 
 #modal-container.is-visible {
-  display: block;
+  float: left;
 }  
 
 #modal-container {
