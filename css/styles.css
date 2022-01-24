@@ -14,6 +14,10 @@ body {
   padding: 10px;
   text-align: center
 }
+.navbar {
+  margin-top: 30px;
+}
+
 .button {
   border: none;
   display: block;
@@ -40,15 +44,24 @@ button:hover {
   list-style: none;
   text-align: center;
   padding: 11px;
-  overflow: auto;
+  overflow: hidden;
   display: block;
   border: 6px double yellow;
+  width: 58.5rem;
+  height: 460rem;
+}
 
   .pokemon-list li {
     margin: 1rem;
+  }
+
+  .pok-item {
+    width: 10rem;
+    height: 10rem;
+    display: inline-flex;
+    margin: 2px;
     }
     
-  
 
 #modal-container.is-visible {
   display: block;
@@ -123,8 +136,16 @@ margin-top: 60px;
     .search-bar:hover{
       border:2px solid #fdee30
 
-    } 
-     .btn-outline-secondary {
+    }  */
+     .btn-outline-success {
       background-color: #fdee30;
-      color:#fdee30;
-    } */
+      color:#000000;
+      border: #fdee30;
+      transition: 0.2s opacity;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    }
+    .btn-outline-success:hover {
+      color: #000000;
+      background-color:white;
+      
+    /* .navbar .navbar-brand {} */
