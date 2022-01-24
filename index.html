@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="css/styles.css" rel="stylesheet" type="text/css" />
   </head>
+  <h1> Pokemon List</h1>
   <nav class="navbar navbar-light" style="background-color: #fdee30;">
   <a class="navbar-brand" href="#">Pokemon</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,15 +30,19 @@
     </ul>
   </div>
 </nav>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   <body class="center">
-    <h1> Pokemon List</h1>
+    <!-- <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Pokemon" aria-label="Pokemon" aria-describedby="button-addon2">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button> 
+      </div> -->
     <ul class="pokemon-list"></ul>
   </div>
-  <div class="input-group mb-3">
-    <input type="text" class="form-control" placeholder="Pokemon" aria-label="Pokemon" aria-describedby="button-addon2">
-    <div class="input-group-append">
-      <button class="btn btn-outline-secondary" type="button" id="button-addon2">Search</button>
-    </div>
+ 
   </div>
   </div>
 
@@ -48,9 +53,9 @@
     </div>
   <body>
       <!-- Button trigger modal -->
-	<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+	<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
-</button>
+</button> -->
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
