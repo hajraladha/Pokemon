@@ -93,7 +93,7 @@ button:hover {
   display: inline-block;
   box-sizing: border-box;
   background-color: #fdee30;
-  background: #000000
+  background: #000000;
   padding: 15px;
   width: 100%;
   max-width: 700px;
@@ -147,5 +147,12 @@ margin-top: 60px;
     .btn-outline-success:hover {
       color: #000000;
       background-color:white;
-      
+    }
     /* .navbar .navbar-brand {} */
+    .form-wrapper { margin-bottom: 2rem; 
+      margin-top: 2rem; 
+      float: right;
+      /* margin: 2rem 0px 2rem 0px; margin: 2rem 0px; */ 
+    }
+    /* .btn-outline-success:not(:disabled):not(.disabled):active { background: yellow; } .btn-outline-success.focus, .btn-outline-success:focus { box-shadow: unset; } .btn-outline-success.focus, .btn-outline-success:focus, .btn-outline-success:hover { border: none; } */
+
