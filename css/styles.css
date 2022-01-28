@@ -132,14 +132,6 @@ margin-top: 60px;
   background-color: inherit;
   color:inherit;
 }
-   /* .search-bar{
-     width:200px;
-     border:2px solid #fdee30
-    }
-    .search-bar:hover{
-      border:2px solid #fdee30
-
-    }  */
      .btn-outline-success {
       background-color: #fdee30;
       color:#000000;
@@ -151,7 +143,7 @@ margin-top: 60px;
       color: #000000;
       background-color:white;
     }
-    /* .navbar .navbar-brand {} */
+  
     .form-wrapper { margin-bottom: 2rem; 
       margin-top: 2rem; 
       float: right;
