@@ -123,14 +123,16 @@ let pokemonRepository = (function () {
 
 // adds search element to the page
 
-$(document).ready(function(){
-  $('#search-pokemon').on('input', function() {
-    var value = $(this).val().toLowerCase();
-    $('.btn').filter(function() {
-      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-    });
-  });
-});
+// $(document).ready(function(){
+//   $('#search-pokemon').on('input', function() {
+//   const value = $(this).val().toLowerCase();
+//   const newPokemonList = pokemonList.filter((pokemon) => pokemon.name.toLowerCase().includes(value))
+//   $('.pokemon-list').empty();
+//   newPokemonList.forEach((pokemon) => addListItem(pokemon))
+//   });
+//   });
+//  });
+
 
 return {
   getAll: getAll,

@@ -1,3 +1,7 @@
+h1{
+  text-align: center;
+}
+
 body {
   background-color: #000000;
   font-family: 'Libre Baskerville', sans-serif;
@@ -12,7 +16,7 @@ body {
   margin: auto;
   width: 50%;
   padding: 10px;
-  text-align: center
+  /* text-align: center */
 }
 .navbar {
   margin-top: 30px;
@@ -93,7 +97,6 @@ button:hover {
   display: inline-block;
   box-sizing: border-box;
   background-color: #fdee30;
-  background: #000000;
   padding: 15px;
   width: 100%;
   max-width: 700px;
@@ -154,5 +157,5 @@ margin-top: 60px;
       float: right;
       /* margin: 2rem 0px 2rem 0px; margin: 2rem 0px; */ 
     }
-    /* .btn-outline-success:not(:disabled):not(.disabled):active { background: yellow; } .btn-outline-success.focus, .btn-outline-success:focus { box-shadow: unset; } .btn-outline-success.focus, .btn-outline-success:focus, .btn-outline-success:hover { border: none; } */
+    .btn-outline-success:not(:disabled):not(.disabled):active { background: yellow; } .btn-outline-success.focus, .btn-outline-success:focus { box-shadow: unset; } .btn-outline-success.focus, .btn-outline-success:focus, .btn-outline-success:hover { border: none; }
 
